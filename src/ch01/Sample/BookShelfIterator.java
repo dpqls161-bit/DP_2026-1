@@ -12,6 +12,9 @@ public class BookShelfIterator implements Iterator<Book> {
         this.index = 0;
     }
 
+
+    //방법 1 이용할 땐 아래 두 오버라이드 안 써도 됨
+    //부모가 가지고 있는 메소드를 자식이 재정의(오버라이드)한다. @ >> 컴파일러 지시어라고 함
     @Override
     public boolean hasNext() {
         if (index < bookShelf.getLength()) {
