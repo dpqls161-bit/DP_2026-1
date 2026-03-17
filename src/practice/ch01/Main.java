@@ -32,7 +32,5 @@ public class Main { //메인 클래스
         for (Book b : bookShelf) { //형식 : for (요소타입 변수명 : 컬렉션) { //컬렉션에서 요소를 하나씩 꺼내와서 변수에 저장하고 반복
             System.out.println("Book: " + b.getName()); //책 이름 출력
         }
-
-
     }
 }

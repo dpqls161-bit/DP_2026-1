@@ -1,21 +1,14 @@
-package ch01.A1;
+package ch01.Sample;
 
 import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("학번 : 20240892, 이름 : 감예빈" );
-
-
         BookShelf bookShelf = new BookShelf(4);
         bookShelf.appendBook(new Book("Around the World in 80 Days"));
         bookShelf.appendBook(new Book("Bible"));
         bookShelf.appendBook(new Book("Cinderella"));
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
-        bookShelf.appendBook(new Book("East of Eden"));
-        bookShelf.appendBook(new Book("Frankenstein"));
-        bookShelf.appendBook(new Book("Gulliver's Travels"));
-        bookShelf.appendBook(new Book("Hamlet"));
 
         // 명시적으로 Iterator를 사용하는 방법 
         Iterator<Book> it = bookShelf.iterator();
@@ -25,7 +18,7 @@ public class Main {
         }
         System.out.println();
 
-        // 확장 for문을 사용하는 방법
+        // 확장 for문을 사용하는 방법 
         for (Book book: bookShelf) {
             System.out.println(book.getName());
         }
