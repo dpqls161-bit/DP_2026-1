@@ -2,6 +2,7 @@ package hw.ch01;
 
 public class Book {
     private String name;
+    //추가
     private String genre;
     private int year;
     private double price;
@@ -9,6 +10,7 @@ public class Book {
 
     public Book(String name) {
         this.name = name;
+        //추가
         this.genre = "";
         this.year = 0;
         this.price = 0.0;
@@ -17,6 +19,7 @@ public class Book {
         이는 기존 코드와의 호환성을 유지하면서 객체의 일관된 상태를 보장하기 위함*/
     }
 
+    //추가
     public Book(String name, String genre, int year, double price) {
     /* 전체 정보를 입력받는 생성자. 책의 모든 정보를 한 번에 초기화*/
         this.name = name;

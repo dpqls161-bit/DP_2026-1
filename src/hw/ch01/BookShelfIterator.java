@@ -35,6 +35,7 @@ public class BookShelfIterator implements Iterator<Book> {
     }
 }
 
+//추가
 //장르 Iterator 생성자에서 장르 정보 받아서 저장해두고 hasNext()에서 해당 장르의 책이 남아있는지 확인,
 //  next()에서 해당 장르의 책을 반환하도록 구현
 class BookShelfGenreIterator implements Iterator<Book> {
@@ -42,7 +43,7 @@ class BookShelfGenreIterator implements Iterator<Book> {
     private String genre;  //필터링할 장르 정보 저장
     private int index;      //현재 위치를 나타내는 인덱스. hasNext()와 next()에서 어디까지 읽었는지 기억하도록
 
-    public BookShelfGenreIterator(BookShelf bookShelf, String genre) {
+    public BookShelfGenreIterator(BookShelf bookShelf, String genre) { //생성자
         this.bookShelf = bookShelf;
         this.genre = genre;
         this.index = 0;
