@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        FileIO f = new FileProperties();
+        FileIO f = new FileProperties(); //어댑터 생성
         try {
             f.readFromFile("file.txt");
             f.setValue("width", "1024");
@@ -17,3 +17,5 @@ public class Main {
         }
     }
 }
+
+//file.txt 파일이 루트폴더 아래에 존재해야함.
